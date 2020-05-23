@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally Student Resume</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <div id="application-root"></div> 
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script> 
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script type="text/babel">
+    function App() {
+      return (
+       <div>     
+        <header>
+        <h1>Sally Student Resume</h1>
+        </header>
+        <main>
+            <section>
+              <h2>Contact Information</h2>
+                <ul>
+                  <li>Name: Sally Student</li>
+                  <li>Email Address: <a href="mailto:Sally.Student@gmail.com">Sally.Student@gmail.com</a></li>
+                  <li>Phone Number: (212) 321-4557</li>
+                </ul>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="An image of Sally Student"/>  
+        </section>
+        <section>
+            <h2>Education</h2>
+            <h3>Arizona State University</h3>
+            <ul>
+            <li>Bachelor's of Science in Computer Science, 2010</li>
+            <li>Master's of Science in Graphic Information Technology, 2016</li>
+            </ul>          
+        </section>
+        <section>
+            <h2>Employment History</h2>
+            <h3>Chase Bank</h3>
+            <ul>
+            <li>Job Title: Junior Front End Developer</li>
+            <li>Dates Employed: June 2016 to May 2018</li>
+            <li>Job Description: Lorem ipsum</li>
+            </ul>
+            <h3>American Express</h3>
+            <ul>
+            <li>Job Title: Front End Developer</li>
+            <li>Dates Employed: May 2018 to current</li>
+            <li>Job Description: Lorem ipsum</li>
+            </ul>
+        </section>      
+        </main>
+        <footer>
+        <address>
+            Written by Sally Student
+            123 Fake Street
+            Springfield, OH, USA
+        </address>
+        </footer>  
+        </div>    
+      );  
+    };   
+    ReactDOM.render(
+      <App />,
+      document.querySelector("#application-root")
+    );
+  </script>   
+</body>
+</html>
